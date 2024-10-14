@@ -18,7 +18,7 @@ services:
   mysql:
     image: mysql:5.7
     environment:
-      MYSQL_DATABASE: my-laravel8
+      MYSQL_DATABASE: my-laravel9
       MYSQL_USER: zzandoll
       MYSQL_PASSWORD: zzandoll
       MYSQL_ROOT_PASSWORD: zzandoll
