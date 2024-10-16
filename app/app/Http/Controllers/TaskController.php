@@ -9,13 +9,14 @@ use App\Http\Requests\UpdateTaskRequest;
 class TaskController extends Controller
 {
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
+     * タスク一覧
+     * @return Task[]
      */
     public function index()
     {
         //
+        //return Task::all();
+        return Task::orderByDesc('id')->get();
     }
 
     /**
